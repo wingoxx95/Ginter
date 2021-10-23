@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Index.css" />
 
     <title>Document</title>
@@ -20,59 +23,255 @@
       </div>
       <div id="przesuwane_menu">
         <div id="menu">
-          <div id="menu_block" onmouseover="menu_in()" onmouseout="menu_out()">
+          <div id="menu_block" onclick="menu_in()">
             INFO
           </div>
           <div id="menu_block1">MENU</div>
         </div>
 
         <hr />
-        <div id="hidden_block">kontakt: 1111 1111 111</div>
+        <div id="hidden_block" onmouseout="menu_out()"><h2>Firma Handlowo Usługowa "GINTER"</h2><br>
+        <lo>
+          <li>Marcin Zastawniak</li> 
+          <li>ul. Zakopiańska 6/1,  57-320  Polanica-Zdrój</li>
+          <li>NIP: 8831379058</li>
+          <li>nr. tel: 602 390 452</li>
+
+        </lo><br>
+        </div>
+      </div>
       </div>
     </div>
     <!-- góra-->
     <!--środek-->
     <div class="mid">
       <div class="block">
-          <div class="content_title">TYUŁ</div>
-          <div class="content">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the
-          </div>
+        <div class="content_title">USŁUGI</div>
+        <div class="content">
+        <lo>
+          <li class='uslugi'>Wycinka drzew;</li>
+          <li class='uslugi'>Pielęgnacja zieleni wysokiej;</li>
+          <li class='uslugi'>Czyczenie i naprawa rynien;</li>
+          <li class='uslugi'>Usuwanie sopli i nawisów śneżnych;</li>
+          <li class='uslugi'>Wycinka sekcyjna drzew „trudnych” z wykorzystaniem technik alpinistycznych;</li>
+          <li class='uslugi'>Wycinka drzew metodą tradycyjną z gruntu;</li>
+          <li class='uslugi'>Plastrowanie pni;</li>
+        </lo>
         </div>
       </div>
       <div class="block">
         <div id="right_block">
-            <div class="content_title">TYUŁ</div>
-            <div class="content">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </div>
-          </div>
-          <!--galeria-->
-        <div class="galeria_cointainer">
-          <div class="gallery_menu">
-            <div id="L_przycisk_galerii"></div>
-            <div class="gallery_photo"></div>
-            <div id="R_przycisk_galerii"></div>
+          <div class="content_title">SPRZĘT</div>
+          <div class="content">
+            <lo>
+              <h2>Podnośnik Multitel M24 Alu:</h2>
+              <li class='sprzet'>Wysokość robocza: 24m</li>
+              <li class='sprzet'>Boczny zasięg: 21m</li>
+              <li class='sprzet'>Zasięg obrotu: 360 stopni</li>
+              <li class='sprzet'>Maksymalna nośność pomostu: 265kg</li>
+            </lo>
 
           </div>
-
+           
+          </div>
         </div>
       </div>
     </div>
+    <!--GALERIA-->
+    <div id="galeria"><div class="carusel">
+      <input type="radio" id="car0" name="car" checked="checked" />
+      <div></div>
+
+      <input type="radio" id="car1" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car0"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_1.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car2" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car1"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_2.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car3" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car2"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_3.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car4" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car3"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_4.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car5" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car4"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_5.jpg);
+          "
+        ></div>
+      </div>
+      
+      <input type="radio" id="car6" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car5"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_6.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car7" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car6"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_7.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car8" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car7"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_8.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car9" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car8"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_9.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car10" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car9"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_10.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car11" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car10"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_11.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car12" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car11"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_12.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car13" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car12"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_13.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car14" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car13"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_14.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car15" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car14"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_15.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car16" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car15"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_16.jpg);
+          "
+        ></div>
+      </div>
+
+      <input type="radio" id="car17" name="car" />
+      <div>
+        <label class="carusel__arrow" for="car16"></label>
+        <div
+          class="carusel__item"
+          style="
+            background-image: url(/img/galeria_17.jpg);
+          "
+        ></div>
+      </div>
+      <!--Tu zdj^-->
+      </div>
+    </div></div>
+    <!--KONIEC_GALERIA-->
     <div class="bottom"></div>
   </body>
 </html>
