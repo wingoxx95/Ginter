@@ -23,6 +23,10 @@ h2 {
 .sprzet {
   padding: 1vh 1vw;
 }
+.info {
+  padding-left: 3vw;
+  padding: 1vh;
+}
 
 #przesuwane_menu {
   position: absolute;
@@ -45,7 +49,15 @@ img {
   height: 100%;
 }
 /* menu*/
-
+#hit_box {
+  background-color: red;
+  float: right;
+  width: 8vw;
+  height: 4vh;
+  text-align: center;
+  justify-content: space-evenly;
+  border-top-right-radius: 10px;
+}
 #menu {
   display: flex;
 }
@@ -67,12 +79,12 @@ img {
   position: absolute;
   display: none;
   background-color: #023047;
-  z-index: 2;
+  z-index: 1;
   width: 50vw;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   color: white;
-  padding: 10vw 5vh;
+  width: 70vw;
 }
 #menu_block1 {
   flex: 1;
@@ -87,6 +99,7 @@ img {
   background-color: #14213d;
   color: white;
 }
+
 /*mid*/
 .mid {
   display: block;
@@ -188,4 +201,11 @@ input:checked + div .carusel__arrow:before {
 }
 input:checked + div + input + div + input + div .carusel__arrow:before {
   content: "❱";
+}
+/* stopka*/
+.stopka {
+  padding: 2vh 3vw;
+  background-color: #14213d;
+  height: 5vh;
+  color: white;
 }

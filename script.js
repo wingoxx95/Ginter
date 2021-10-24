@@ -1,20 +1,18 @@
 function menu_in() {
-  var element = document.getElementById("menu_block");
-  var element_1 = document.getElementById("hidden_block");
+  var menu_block = document.getElementById("menu_block");
+  var hidden_block = document.getElementById("hidden_block");
 
-  element.addEventListener(
-    "onmouseover",
-    (element.style.backgroundColor = "#000000") &
-      (element_1.style.display = "block")
-  );
+  menu_block.style.backgroundColor = "#000000";
+  hidden_block.style.display = "block";
 }
 function menu_out() {
-  var element = document.getElementById("menu_block");
-  var element_1 = document.getElementById("hidden_block");
+  var menu_block = document.getElementById("menu_block");
+  var hidden_block = document.getElementById("hidden_block");
+  var hit_box = document.getElementById("hit_box");
 
-  element.addEventListener(
-    "onmouseout",
-    (element.style.backgroundColor = "#14213d") &
-      (element_1.style.display = "none")
+  hit_box.addEventListener(
+    "onclick",
+    (menu_block.style.backgroundColor = "#14213d") &
+      (hidden_block.style.display = "none")
   );
 }
