@@ -28,12 +28,6 @@ h2 {
   padding: 1vh;
 }
 
-#przesuwane_menu {
-  position: absolute;
-  z-index: 1;
-  background-color: white;
-  width: 100%;
-}
 .logo_cointainer {
   margin: 0;
   display: flex;
@@ -50,10 +44,9 @@ img {
 }
 /* menu*/
 #hit_box {
+  padding: 1vh 2vw;
   background-color: red;
   float: right;
-  width: 8vw;
-  height: 4vh;
   text-align: center;
   justify-content: space-evenly;
   border-top-right-radius: 10px;
@@ -63,7 +56,6 @@ img {
 }
 #menu_block {
   flex: 1;
-  position: relative;
   border: 2px solid rgb(46, 46, 46);
   border-radius: 10px;
   text-align: center;
@@ -79,7 +71,6 @@ img {
   position: absolute;
   display: none;
   background-color: #023047;
-  z-index: 1;
   width: 50vw;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -103,11 +94,9 @@ img {
 /*mid*/
 .mid {
   display: block;
-  margin-top: 10vh;
 }
 .block {
-  margin-top: 7vh;
-  margin: 5vw;
+  margin: 2vw;
   padding: 1vh 1vw;
 }
 .content_title {
@@ -204,7 +193,7 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 }
 /* stopka*/
 .stopka {
-  padding: 2vh 3vw;
+  padding: 3vh 4vw;
   background-color: #14213d;
   height: 5vh;
   color: white;
