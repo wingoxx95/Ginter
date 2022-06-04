@@ -119,9 +119,20 @@ img {
   margin-right: 0;
   margin-left: auto;
 }
+/*-----------------Mój Edid----------------*/
+.kontakt-info-background{
+  position: relative;
+  left: -5vw;
+  padding: 1vh 0 1vh 10vw;
 
+  background-color: antiquewhite;
+}
+h2{
+  text-align: center;
+}
 .tm-hero-text {
   padding: 140px 95px 0;
+  text-align: center;
 }
 
 .tm-block-pad {
